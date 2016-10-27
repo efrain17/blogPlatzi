@@ -1,0 +1,95 @@
+
+header {
+  background: #273B47;
+  height: 50px;
+  padding:0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-right {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header-right .button {
+  margin-left: 10px;
+}
+
+.button {
+  background: gray;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+  /*border-bottom: 5px solid black;*/
+  font-size: 14px;
+  padding: 5px 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.button:active {
+  transform: scale(.9);
+}
+
+.button.red {
+  background: #ff4842;
+  /*border-color: yellow;*/
+}
+
+.button.green {
+  background: #7dcd40;
+  /*border-color: purple;*/
+}
+
+nav {
+  /* background: purple; */
+  /* float: right; */
+  /* position: absolute; */
+  /*right: 0;*/
+  height: inherit;
+}
+nav ul {
+  margin: 0;
+  height: inherit;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  /*margin: 0 10px;*/
+  color: white;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+nav li:after{
+  content: "|";
+  display: inline-block;
+  /* margin:0 10px; */
+}
+
+nav li:last-child:after{
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  /*border-top: 5px solid transparent;*/
+}
+nav a:hover {
+  /*box-shadow: donde se ubicar la sombra, x, y, difuminado, color;*/
+  box-shadow: inset 0 5px 0 red !important;
+  /*border-top: 5px solid #ff4842;*/
+}
+nav a.is-active {
+  box-shadow: inset 0 5px 0 #7dcd40;
+}
